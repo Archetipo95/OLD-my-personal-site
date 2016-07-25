@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Tutorial</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type='text/css'>
+        .jumbotron {
+            background-color: #252525;
+            color: white;
+        }
+        
+        .tab-content {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        
+        .nav-tabs {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Titolo pagina -->
+    <div class="container">
+        <div class="page-header">
+            <h1>Tutorial Bootstrap Pagina 2</h1>
+        </div>
+    </div>
+
+    <!-- Navigatore -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-12">
+                <div class="btn-group btn-group-lg" role="group">
+                    <a href="seconda.html" class="btn btn-default btn-lg">PRECEDENTE</a>
+                    <a href="index.html" class="btn btn-default btn-lg">HOME</a>
+                    <a href="quarta.html" class="btn btn-default btn-lg">PROSSIMA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <div class="container">
+            <p>
+                <span class="glyphicon glyphicon-grain"></span>
+
+                <a href="#" class="btn btn-primary btn-lg">Trash <span class="glyphicon glyphicon-trash"></span></a>
+
+                <a href="#" class="btn btn-default btn-lg">Trash <span class="glyphicon glyphicon-trash" aria-hiddden="true"></span></a>
+
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="well well-sm">
+            <p>LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM</p>
+        </div>
+        <p>LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM LOREM </p>
+    </div>
+
+    <div class="container">
+        <img src="http://lorempicsum.com/nemo/1920/1080/1" class="img-responsive img-thumbnail pull-left">
+    </div>
+
+    <div class="container">
+        <span class="text-muted">Span numero 1</span>
+        <span class="text-primary">Span numero 2</span>
+        <span class="text-success">Span numero 3</span>
+        <span class="text-info">Span numero 4</span>
+        <span class="text-warning">Span numero 5</span>
+        <span class="text-danger">Span numero 6</span>
+
+        <span class="bg-muted">Span numero 1</span>
+        <span class="bg-primary">Span numero 2</span>
+        <span class="bg-success">Span numero 3</span>
+        <span class="bg-info">Span numero 4</span>
+        <span class="bg-warning">Span numero 5</span>
+        <span class="bg-danger">Span numero 6</span>
+    </div>
+
+    <div class="container">
+        <div class="dropdown">
+            <button class="btn btn-primary btn-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Favorite Hero
+                <span class="caret"></span></button>
+
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">Marvel</li>
+                <li><a href="#">Spiderman</a></li>
+                <li><a href="#">Captain America</a></li>
+                <li><a href="#">Iron Man</a></li>
+                <li><a href="#">Gesu</a></li>
+
+                <li role="separator" class="divider"></li>
+
+                <li class="dropdown-header">DC</li>
+                <li class="disabled"><a href="#">Spiderman</a></li>
+                <li><a href="#">Captain America</a></li>
+                <li><a href="#">Iron Man</a></li>
+                <li><a href="#">Gesu</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="input-group inpout-group-lg">
+            <span class="input-group-addon">Your name</span>
+            <input type="text" class="form-control" placeholder="Full Name">
+        </div>
+        <br>
+
+        <div class="input-group inpout-group-sm">
+            <input type="text" class="form-control" placeholder="Full Name">
+            <span class="input-group-btn"><button class="btn btn-default">Enter</button></span>
+        </div>
+        <br>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        User ID<span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Google+</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" aria-label="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <input type="checkbox">
+                </span>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="list-inline">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-togle" data-toggle="dropdown">Contact<span class="caret"></span>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Toni</a></li>
+            <li><a href="#">Pippo</a></li>
+            <li><a href="#">Gesu</a></li>
+        </ul>
+        </a>
+        </li>
+        </ul>
+
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#">Test</a></li>
+            <li class="active"><a href="#">Prova</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Toni</a></li>
+                    <li><a href="#">Pippo</a></li>
+                    <li><a href="#">Gesu</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

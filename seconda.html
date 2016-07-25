@@ -28,20 +28,75 @@
             background-color: #252525;
             color: white;
         }
+        
+        #nttLogo {
+            border-radius: 8px;
+            height: 100px;
+            width: 100px;
+        }
+        
+        #websiteTitle {
+            font-size: 10em;
+            vertical-align: middle;
+            font-family: 'Pacifico', cursive;
+            padding-left: 15px;
+            color: #191970;
+        }
+        
+        #websiteSlogan {
+            font-size: 5.4em;
+        }
+        /* Carousel Styling */
+        
+        .slide1 {
+            background-image: url('http://lorempicsum.com/nemo/400/200/1');
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .slide2 {
+            background-image: url('http://lorempicsum.com/futurama/400/200/1');
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .slide3 {
+            background-image: url('http://lorempicsum.com/rio/400/200/1');
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .carousel-caption h1 {
+            font-size: 5.4em;
+            font-family: 'Pacifico', cursive;
+            padding-bottom: .4em;
+        }
+        
+        .carousel-caption p {
+            font-size: 2em;
+        }
     </style>
 </head>
 
 <body>
 
+    <!-- Titolo pagina -->
     <div class="container">
         <div class="page-header">
             <h1>Tutorial Bootstrap Pagina 2</h1>
         </div>
     </div>
 
+    <!-- Navigatore -->
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-4">
+            <div class="col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-1 col-xs-12">
                 <div class="btn-group btn-group-lg" role="group">
                     <a href="index.html" class="btn btn-default btn-lg">PRECEDENTE</a>
                     <a href="index.html" class="btn btn-default btn-lg">HOME</a>
@@ -54,13 +109,13 @@
     <div class="container">
         <div class="row">
             <div class="jumbotron">
-                <img src="http://lorempixel.com/g/50/50/business" id="nttlogo" alt="Logo">
+                <img src="http://lorempicsum.com/simpsons/100/100/8" id="nttLogo" alt="Logo">
                 <span id="websiteTitle">New Think Tank</span>
                 <p id="websiteslogan">Video tut on just about anything</p>
             </div>
         </div>
     </div>
-<br><br><br><br><br><br><br>
+
     <div id="theCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
@@ -71,12 +126,12 @@
         <div class="carousel-inner">
             <div class="item active">
                 <div class="slide1">
-                <div class="carousel-caption">
-                    <h1>Amazing Backgrounds</h1>
-                    <p>Backgrounds for free</p>
-                    <p><a href="#" class="btn btn-primary btn-sm">Get them now</a></p>
+                    <div class="carousel-caption">
+                        <h1>Amazing Backgrounds</h1>
+                        <p>Backgrounds for free</p>
+                        <p><a href="#" class="btn btn-primary btn-sm">Get them now</a></p>
+                    </div>
                 </div>
-            </div>
             </div>
 
             <div class="item">

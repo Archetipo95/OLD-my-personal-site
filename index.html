@@ -1,162 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap Tutorial</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js - Pure Javascript version</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Pure javascript version of full screen slider." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple,pure,javascript,slider,hijacking" />
+	<meta name="Resource-type" content="Document" />
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
 
-    <style>
-        .jumbotron {
-            background-color: #252525;
-            color: white;
-        }
-    </style>
+	<style>
+		/* Reset CSS
+		 * --------------------------------------- */
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+		form,fieldset,input,textarea,p,blockquote,th,td {
+		    padding: 0;
+		    margin: 0;
+		}
+		a{
+			text-decoration:none;
+		}
+		table {
+		    border-spacing: 0;
+		}
+		fieldset,img {
+		    border: 0;
+		}
+		address,caption,cite,code,dfn,em,strong,th,var {
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		strong{
+			font-weight: bold;
+		}
+		ol,ul {
+		    list-style: none;
+		    margin:0;
+		    padding:0;
+		}
+		caption,th {
+		    text-align: left;
+
+		}
+		h1,h2,h3,h4,h5,h6 {
+		    font-weight: normal;
+		    font-size: 100%;
+		    margin:0;
+		    padding:0;
+		    color:#444;
+		}
+		q:before,q:after {
+		    content:'';
+		}
+		abbr,acronym { border: 0;
+		}
+
+
+		/* Custom CSS
+		 * --------------------------------------- */
+		body{
+			font-family: arial,helvetica;
+			color: #F2F2F2;
+		}
+		h1{
+			font-size: 6em;
+		}
+		p{
+			font-size: 2em;
+		}
+		.content{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+		}
+
+		/* Section 1
+		 * --------------------------------------- */
+		#section0{
+			background-color: #BFDA00;
+		}
+		#section0 h1{
+			color: #444;
+		}
+		#section0 p{
+			color: #333;
+			opacity: 0.4;
+		}
+
+
+		/* Section 2
+		 * --------------------------------------- */
+		#section1{
+			background-color: #2EBE21;
+		}
+		#section1 h1{
+			color: #fff;
+		}
+		#section1 p{
+			opacity: 0.8;
+		}
+
+
+		/* Section 3
+		 * --------------------------------------- */
+		#section2{
+			background-color: #2C3E50;
+		}
+		#section2 h1{
+			color: #F2F2F2;
+		}
+		#section2 p{
+			opacity: 0.6;
+		}
+	</style>
 </head>
-
 <body>
 
-    <div class="container">
-        <div class="page-header">
-            <h1>Tutorial Bootstrap Pagina 1</h1>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-4">
-                <div class="btn-group btn-group-lg" role="group">
-                    <a href="#" class="btn btn-default btn-lg">PRECEDENTE</a>
-                    <a href="index.html" class="btn btn-default btn-lg">HOME</a>
-                    <a href="seconda.html" class="btn btn-default btn-lg">PROSSIMA</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="jumbotron">
-        <p>
-            Malis proident ne elit duis. Expetendis nam officia. Incurreret aute deserunt nam duis incididunt et doctrina. Legam eiusmod coniunctione ita id quo quid iudicem. Non culpa e legam te o illum dolor irure officia, e quid aliquip exquisitaque, eram excepteur si senserit. Cillum incididunt cernantur, ne laboris hic mentitum, quis quo admodum non fabulas summis proident nescius.
-        </p>
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="content">
+			<h1>fullPage.js</h1>
+			<p>Javascript only version</p>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div class="slide" id="slide1">
+			<div class="content">
+				<h1>No need for jQuery</h1>
+				<p>
+					5 Kb gzipped!!
+				</p>
+				<p>
+		      		Improve the loading time of your site!
+				</p>
+			</div>
+		</div>
+		<div class="slide" id="slide2">
+			<div class="content">
+				<h1>Slides too!</h1>
+			</div>
+		</div>
+		<div class="slide" id="slide2">
+			<div class="content">
+				<h1>More slides!</h1>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="content">
+			<h1>Compatible</h1>
+			<p>IE 8+ support.</p>
+		</div>
+	</div>
+</div>
 
-        <p>
-            <a href="#" class="btn btn-default btn-lg" role="button">More Info</a>
+<script type="text/javascript" src="javascript.fullPage.js"></script>
+<script type="text/javascript">
+	fullpage.initialize('#fullpage', {
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		menu: '#menu',
+		css3:true
+	});
 
-            <button type="submit" class="btn btn-danger" role="button">Button</button>
+</script>
 
-            <input type="button" value="Info" class="btn btn-info">
-
-            <button type="submit" class="btn btn-primary btn-sm" role="button">Primary</button>
-            <button type="submit" class="btn btn-success btn-xs" role="button">Success</button>
-            <button type="submit" class="btn btn-warning btn-lg" role="button">Warning</button>
-            <button type="submit" class="btn btn-link btn-lg" role="button">Link</button>
-
-            <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary</button>
-            <a href="#" class="btn btn-default btn-lg disabled" role="button">More Info</a>
-
-            <div class="btn-group btn-group-lg" role="group">
-                <button type="button" class="btn btn-default">Small</button>
-                <button type="button" class="btn btn-default">Medium</button>
-                <button type="button" class="btn btn-default">Large</button>
-            </div>
-        </p>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <h4>Colonna 1</h4> Litteris non aliqua, quamquam elit malis sed dolore do singulis qui velit id arbitror ea ingeniis. Minim litteris iis fore quis, legam graviterque ullamco dolor fabulas, nam quae possumus litteris qui qui nulla eiusmod cohaerescant. Cillum appellat a probant. Labore e proident hic velit o nisi nescius quamquam, hic commodo voluptatibus id consequat coniunctione do fabulas. Varias graviterque probant eram singulis ut commodo fore duis ubi lorem, hic fore possumus, enim a ingeniis, mentitum sed voluptate, do dolore vidisse, ubi quis fugiat a ullamco qui cillum litteris ubi aliquip. Qui ubi sunt eiusmod, ubi varias quae varias commodo. Se sint enim dolore fabulas, quid ad ita aliqua iudicem si deserunt sed lorem, id malis o lorem. Quem probant consequat, quid cohaerescant iudicem minim possumus.
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <h4>Colonna 2</h4> Litteris non aliqua, quamquam elit malis sed dolore do singulis qui velit id arbitror ea ingeniis. Minim litteris iis fore quis, legam graviterque ullamco dolor fabulas, nam quae possumus litteris qui qui nulla eiusmod cohaerescant. Cillum appellat a probant. Labore e proident hic velit o nisi nescius quamquam, hic commodo voluptatibus id consequat coniunctione do fabulas. Varias graviterque probant eram singulis ut commodo fore duis ubi lorem, hic fore possumus, enim a ingeniis, mentitum sed voluptate, do dolore vidisse, ubi quis fugiat a ullamco qui cillum litteris ubi aliquip. Qui ubi sunt eiusmod, ubi varias quae varias commodo. Se sint enim dolore fabulas, quid ad ita aliqua iudicem si deserunt sed lorem, id malis o lorem. Quem probant consequat, quid cohaerescant iudicem minim possumus. TTTTTTTTTTTTTTTTTTTT
-            </div>
-
-            <div class="clearfix visible-sm"></div>
-
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <h4>Colonna 3</h4> Litteris non aliqua, quamquam elit malis sed dolore do singulis qui velit id arbitror ea ingeniis. Minim litteris iis fore quis, legam graviterque ullamco dolor fabulas, nam quae possumus litteris qui qui nulla eiusmod cohaerescant. Cillum appellat a probant. Labore e proident hic velit o nisi nescius quamquam, hic commodo voluptatibus id consequat coniunctione do fabulas. Varias graviterque probant eram singulis ut commodo fore duis ubi lorem, hic fore possumus, enim a ingeniis, mentitum sed voluptate, do dolore vidisse, ubi quis fugiat a ullamco qui cillum litteris ubi aliquip. Qui ubi sunt eiusmod, ubi varias quae varias commodo. Se sint enim dolore fabulas, quid ad ita aliqua iudicem si deserunt sed lorem, id malis o lorem. Quem probant consequat, quid cohaerescant iudicem minim possumus.
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <h4>Colonna 4</h4> Litteris non aliqua, quamquam elit malis sed dolore do singulis qui velit id arbitror ea ingeniis. Minim litteris iis fore quis, legam graviterque ullamco dolor fabulas, nam quae possumus litteris qui qui nulla eiusmod cohaerescant. Cillum appellat a probant. Labore e proident hic velit o nisi nescius quamquam, hic commodo voluptatibus id consequat coniunctione do fabulas. Varias graviterque probant eram singulis ut commodo fore duis ubi lorem, hic fore possumus, enim a ingeniis, mentitum sed voluptate, do dolore vidisse, ubi quis fugiat a ullamco qui cillum litteris ubi aliquip. Qui ubi sunt eiusmod, ubi varias quae varias commodo. Se sint enim dolore fabulas, quid ad ita aliqua iudicem si deserunt sed lorem, id malis o lorem. Quem probant consequat, quid cohaerescant iudicem minim possumus.
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-                <h4><a href="#col1Content" data-toggle="collapse">Column1</a></h4>
-                <div id="col1Content" class="collapse in">Dolore litteris iis sunt nisi, quid quibusdam arbitrantur. Si cillum coniunctione in aliquip ab irure quamquam nam hic hic reprehenderit ut a officia de arbitror. Nulla mentitum ab doctrina. Iis summis irure a incididunt, litteris cohaerescant ad nescius, qui culpa exercitation, do minim est fore. Senserit de admodum te cupidatat ne sunt. Id illum cohaerescant.</div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-                <h4><a href="#col2Content" data-toggle="collapse">Column2</a></h4>
-                <div id="col2Content" class="collapse">Dolore litteris iis sunt nisi, quid quibusdam arbitrantur. Si cillum coniunctione in aliquip ab irure quamquam nam hic hic reprehenderit ut a officia de arbitror. Nulla mentitum ab doctrina. Iis summis irure a incididunt, litteris cohaerescant ad nescius, qui culpa exercitation, do minim est fore. Senserit de admodum te cupidatat ne sunt. Id illum cohaerescant.</div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-                <h4><a href="#col3Content" data-toggle="collapse">Column3</a></h4>
-                <div id="col3Content" class="collapse">Dolore litteris iis sunt nisi, quid quibusdam arbitrantur. Si cillum coniunctione in aliquip ab irure quamquam nam hic hic reprehenderit ut a officia de arbitror. Nulla mentitum ab doctrina. Iis summis irure a incididunt, litteris cohaerescant ad nescius, qui culpa exercitation, do minim est fore. Senserit de admodum te cupidatat ne sunt. Id illum cohaerescant.</div>
-            </div>
-            <div class="col-lg-4 col-md-2 col-sm-4 col-xs-12">
-                <h4><a href="#col4Content" data-toggle="collapse">Column4</a></h4>
-                <div id="col4Content" class="collapse in">Dolore litteris iis sunt nisi, quid quibusdam arbitrantur. Si cillum coniunctione in aliquip ab irure quamquam nam hic hic reprehenderit ut a officia de arbitror. Nulla mentitum ab doctrina. Iis summis irure a incididunt, litteris cohaerescant ad nescius, qui culpa exercitation, do minim est fore. Senserit de admodum te cupidatat ne sunt. Id illum cohaerescant.</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="well hidden-sm hidden-md hidden-lg">
-            <p>Screen is &lt; 768px</p>
-        </div>
-        <div class="well hidden-md hidden-lg">
-            <p>Screen is &gt; 768px and &lt; 992px</p>
-        </div>
-        <div class="well hidden-lg">
-            <p>Screen is &gt; 992px and &lt; 1200px</p>
-        </div>
-        <div class="well">
-            <p>Screen is &gt; 1200px</p>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <!--<div class="col-md-6"></div>-->
-
-            <div class="col-md-6 col-md-offset-6">
-                <table class="table table-bordered table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <td colspan="4">Best baseball Players</td>
-                        </tr>
-                    </thead>
-
-                    <th class="col-md-2"></th>
-
-                    <th class="text-right">Prova</th>
-                    <th class="text-right">Prova</th>
-                    <th class="text-right">Prova</th>
-
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>

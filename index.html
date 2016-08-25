@@ -3,11 +3,16 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="background-color">
+    <meta name="msapplication-navbutton-color" content="#4285f4">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+
+    <link rel="icon" type="image/png" href="img/github.png" sizes="192x192">
+
     <title>Martin Masevski</title>
-    <meta name="author" content="Alvaro Trigo Lopez" />
-    <meta name="description" content="fullPage plugin by Alvaro Trigo. Pure javascript version of full screen slider." />
-    <meta name="keywords" content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple,pure,javascript,slider,hijacking" />
+
     <meta name="Resource-type" content="Document" />
 
     <link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
@@ -186,7 +191,6 @@
         #section3 p {
             opacity: 0.6;
         }
-        
         /* Section 4
 		 * --------------------------------------- */
         
@@ -201,45 +205,68 @@
         #section4 p {
             opacity: 0.6;
         }
+        
         #section4 img {
             width: 20%;
         }
         
+        .corner-ribbon {
+            width: 200px;
+            background: #e43;
+            position: absolute;
+            top: 25px;
+            left: -50px;
+            text-align: center;
+            line-height: 50px;
+            letter-spacing: 1px;
+            color: #f0f0f0;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        /* Custom styles */
         
-.corner-ribbon{
-  width: 200px;
-  background: #e43;
-  position: absolute;
-  top: 25px;
-  left: -50px;
-  text-align: center;
-  line-height: 50px;
-  letter-spacing: 1px;
-  color: #f0f0f0;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-/* Custom styles */
-
-.corner-ribbon.sticky{
-  position: fixed;
-}
-
-.corner-ribbon.shadow{
-  box-shadow: 0 0 3px rgba(0,0,0,.3);
-}
-
-/* Different positions */
-
-.corner-ribbon.top-left{
-  top: 25px;
-  left: -50px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-        .corner-ribbon.white{background: #f0f0f0; color: #555;}
+        .corner-ribbon.sticky {
+            position: fixed;
+        }
+        
+        .corner-ribbon.shadow {
+            box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+        }
+        /* Different positions */
+        
+        .corner-ribbon.top-left {
+            top: 25px;
+            left: -50px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        
+        .corner-ribbon.white {
+            background: #f0f0f0;
+            color: #555;
+        }
     </style>
+    
+    
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+    <script>
+    
+    function getRandomColor() {
+      // stole from http://stackoverflow.com/questions/1484506/random-color-generator-in-javascript
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+   }
+    
+    setInterval(function() {
+      $('meta[name="theme-color"]').attr({content: getRandomColor()});
+    },1000);
+    
+  </script>
 </head>
 
 <body>
@@ -279,17 +306,17 @@
         <div class="section" id="section3">
             <div class="content">
                 <h1>Find me on</h1>
-</div>
             </div>
+        </div>
         <div class="section" id="section4">
             <div class="content">
                 <h1>Find me on...</h1>
                 <a href="https://www.linkedin.com/in/martin-masevski-436857102" target="_blank"><img src="img/linkedin-button.png" alt="Linkedin"></a>
                 <a href="https://github.com/Archetipo95" target="_blank"><img src="img/github.png" alt="GitHub"></a>
                 <a href="https://twitter.com/MartinMasevski" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
-                
+
                 <a href="https://www.instagram.com/martinmasevski/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-                
+
             </div>
         </div>
     </div>

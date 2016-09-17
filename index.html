@@ -109,6 +109,13 @@
                 opacity: 0.4;
             }
             
+            #section0 img{
+                border-radius: 50%;
+                border: 5px solid #bdc157;
+                max-width: 80%;
+                height: auto;
+            }
+            
             /* section1 */
             
             #section1 {
@@ -204,39 +211,37 @@
                 -webkit-transform: rotate(-45deg);
             }
         
-        .corner-ribbon.white {
-            background: #f0f0f0;
-            color: #555;
-        }
-    </style>
+            .corner-ribbon.white {
+                background: #f0f0f0;
+                color: #555;
+            }
+        </style>
     
+        <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script>
     
-    <script>
+            function getRandomColor() {
+                var letters = '0123456789ABCDEF'.split('');
+                var color = '#';
+                for (var i = 0; i < 6; i++ ) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
     
-    function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-   }
+            setInterval(function() {$('meta[name="theme-color"]').attr({content: getRandomColor()});},10000);
     
-    setInterval(function() {
-      $('meta[name="theme-color"]').attr({content: getRandomColor()});
-    },10000);
-    
-  </script>
-</head>
+        </script>
+    </head>
 
-<body>
+    <body>
 
     <div id="fullpage">
         <div class="section " id="section0">
             <div class="corner-ribbon top-left sticky white shadow">New Site!</div>
             <div class="content">
+                <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAASaAAAAJGRmNWI0OTcyLWFjZTYtNGFkYS1iMWJiLTVjOThlODY3MzAwZA.jpg">
                 <h1>Martin Masevski</h1>
                 <p>Always Improve, Never Be Satisfied</p>
             </div>
@@ -245,7 +250,7 @@
             <div class="slide" id="slide1">
                 <div class="content">
                     <h1>Slide 1</h1>
-                    <p>PREGHIAMO FRATELLI !</p>
+                    <p>Questo e' un paragrafo</p>
                 </div>
             </div>
             <div class="slide" id="slide2">
@@ -267,7 +272,7 @@
         </div>
         <div class="section" id="section3">
             <div class="content">
-            <img src="img/github.png">
+                <img src="img/github.png">
             </div>
         </div>
         <div class="section" id="section4">

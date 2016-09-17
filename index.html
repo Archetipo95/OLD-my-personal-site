@@ -1,252 +1,208 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
- <!--   
-    <meta name="theme-color" content="#222222">
-
-    <meta name="mobile-web-app-capable" content="yes">
-<meta name="msapplication-navbutton-color" content="#4285f4">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+<!--    colorare barra di stato mobile
+        <meta name="theme-color" content="#222222">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="msapplication-navbutton-color" content="#4285f4">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
 -->
-    <link rel="icon" type="image/png" href="img/github.png" sizes="192x192">
+        <!-- favicon-->
+        <link rel="icon" type="image/png" href="img/github.png" sizes="192x192">
 
-    <title>Martin Masevski</title>
-
-    <meta name="Resource-type" content="Document" />
-
-    <link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
-
-    <style>
-        /* Reset CSS
-		 * --------------------------------------- */
+        <title>Martin's website</title>
         
-        body,
-        div,
-        dl,
-        dt,
-        dd,
-        ul,
-        ol,
-        li,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        pre,
-        form,
-        fieldset,
-        input,
-        textarea,
-        p,
-        blockquote,
-        th,
-        td {
-            padding: 0;
-            margin: 0;
-        }
+        <meta name="Resource-type" content="Document" />
+        <link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
         
-        a {
-            text-decoration: none;
-        }
-        
-        table {
-            border-spacing: 0;
-        }
-        
-        fieldset,
-        img {
-            border: 0;
-        }
-        
-        address,
-        caption,
-        cite,
-        code,
-        dfn,
-        em,
-        strong,
-        th,
-        var {
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        strong {
-            font-weight: bold;
-        }
-        
-        ol,
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        caption,
-        th {
-            text-align: left;
-        }
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-weight: normal;
-            font-size: 100%;
-            margin: 0;
-            padding: 0;
-            color: #444;
-        }
-        
-        q:before,
-        q:after {
-            content: '';
-        }
-        
-        abbr,
-        acronym {
-            border: 0;
-        }
-        /* Custom CSS
-		 * --------------------------------------- */
-        
-        body {
-            font-family: arial, helvetica;
-            color: #F2F2F2;
-        }
-        
-        h1 {
-            font-size: 6em;
-        }
-        
-        p {
-            font-size: 2em;
-        }
-        
-        .content {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: center;
-        }
-        /* Section 0
-		 * --------------------------------------- */
-        
-        #section0 {
-            background-color: #CDDC39;
-        }
-        
-        #section0 h1 {
-            color: #444;
-        }
-        
-        #section0 p {
-            color: #333;
-            opacity: 0.4;
-        }
-        /* Section 1
-		 * --------------------------------------- */
-        
-        #section1 {
-            background-color: #40C4FF;
-        }
-        
-        #section1 h1 {
-            color: #fff;
-        }
-        
-        #section1 p {
-            opacity: 0.8;
-        }
-        /* Section 2
-		 * --------------------------------------- */
-        
-        #section2 {
-            background-color: #FFC107;
-        }
-        
-        #section2 h1 {
-            color: #F2F2F2;
-        }
-        
-        #section2 p {
-            opacity: 0.6;
-        }
-        /* Section 3
-		 * --------------------------------------- */
-        
-        #section3 {
-            background-color: grey;
-        }
-        
-        #section3 h1 {
-            color: #F2F2F2;
-        }
-        
-        #section3 p {
-            opacity: 0.6;
-        }
-        #section3 img {
-            width: 10%;
+        <style>
+             /* CSS reset */
             
-        }
+            body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+                padding: 0;
+                margin: 0;
+            }
         
-        /* Section 4
-		 * --------------------------------------- */
+            a {
+                text-decoration: none;
+            }
         
-        #section4 {
-            background-color: whitesmoke;
-        }
+            table {
+                border-spacing: 0;
+            }
         
-        #section4 h1 {
-            color: #010002;
-        }
+            fieldset, img {
+                border: 0;
+            }
         
-        #section4 p {
-            opacity: 0.6;
-        }
+            address, caption, cite, code, dfn, em, strong, th, var {
+                font-weight: normal;
+                font-style: normal;
+            }
         
-        #section4 img {
-            width: 10%;
-        }
+            strong {
+                font-weight: bold;
+            }
         
-        .corner-ribbon {
-            width: 200px;
-            background: #e43;
-            position: absolute;
-            top: 25px;
-            left: -50px;
-            text-align: center;
-            line-height: 50px;
-            letter-spacing: 1px;
-            color: #f0f0f0;
-            transform: rotate(-45deg);
-            -webkit-transform: rotate(-45deg);
-        }
-        /* Custom styles */
+            ol, ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
         
-        .corner-ribbon.sticky {
-            position: fixed;
-        }
+            caption, th {
+                text-align: left;
+            }
         
-        .corner-ribbon.shadow {
-            box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-        }
-        /* Different positions */
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: normal;
+                font-size: 100%;
+                margin: 0;
+                padding: 0;
+                color: #444;
+            }
         
-        .corner-ribbon.top-left {
-            top: 25px;
-            left: -50px;
-            transform: rotate(-45deg);
-            -webkit-transform: rotate(-45deg);
-        }
+            q:before, q:after {
+                content: '';
+            }
+        
+            abbr, acronym {
+                border: 0;
+            }
+        
+            /* CSS personalizzato */
+            
+            body {
+                font-family: arial, helvetica;
+                color: #F2F2F2;
+            }
+        
+            h1 {
+                font-size: 6em;
+            }
+        
+            p {
+                font-size: 2em;
+            }
+        
+            .content {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+            }
+        
+            /* section0 */
+            
+            #section0 {
+                background-color: #CDDC39;
+            }
+        
+            #section0 h1 {
+                color: #444;
+            }
+        
+            #section0 p {
+                color: #333;
+                opacity: 0.4;
+            }
+            
+            /* section1 */
+            
+            #section1 {
+            background-color: #40C4FF;
+            }
+        
+            #section1 h1 {
+                color: #fff;
+            }
+        
+            #section1 p {
+                opacity: 0.8;
+            }
+        
+            /* section2 */
+        
+            #section2 {
+                background-color: #FFC107;
+            }
+        
+            #section2 h1 {
+                color: #F2F2F2;
+            }
+        
+            #section2 p {
+                opacity: 0.6;
+            }
+        
+            /* section3 */
+            
+            #section3 {
+                background-color: grey;
+            }
+        
+            #section3 h1 {
+                color: #F2F2F2;
+            }
+        
+            #section3 p {
+                opacity: 0.6;
+            }
+        
+            #section3 img {
+                width: 10%;
+            }
+            
+            /* section4 */
+            
+            #section4 {
+                background-color: whitesmoke;
+            }
+
+            #section4 h1 {
+                color: #010002;
+            }
+        
+            #section4 p {
+                opacity: 0.6;
+            }
+        
+            #section4 img {
+                width: 10%;
+            }
+        
+            .corner-ribbon {
+                width: 200px;
+                background: #e43;
+                position: absolute;
+                top: 25px;
+                left: -50px;
+                text-align: center;
+                line-height: 50px;
+                letter-spacing: 1px;
+                color: #f0f0f0;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+        
+            /* CSS per fiocco */
+        
+            .corner-ribbon.sticky {
+                position: fixed;
+            }
+        
+            .corner-ribbon.shadow {
+                box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+            }
+        
+            .corner-ribbon.top-left {
+                top: 25px;
+                left: -50px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
         
         .corner-ribbon.white {
             background: #f0f0f0;

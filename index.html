@@ -221,7 +221,20 @@
         </style>
     
         <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    
+
+        <script>
+            function getRandomColor() {
+                var color = '#';
+                
+                    color += getComputedStyle(target).backgroundColor;
+                
+                return color;
+            }
+            
+            setInterval(function() {$('meta[name="theme-color"]').attr({content: getRandomColor()});},1000);
+
+        </script>
+<!--    
         <script>
             
             function getRandomColor() {
@@ -232,10 +245,12 @@
                 }
                 return color;
             }
-    
+            
             setInterval(function() {$('meta[name="theme-color"]').attr({content: getRandomColor()});},10000);
     
         </script>
+-->
+    
     </head>
 
     <body>

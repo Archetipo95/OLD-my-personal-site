@@ -121,7 +121,7 @@
             /* section1 */
             
             #section1 {
-                background-color: rgb(64, 196, 255);
+                background-color: #40c4ff;
             }
         
             #section1 h1 {
@@ -236,16 +236,27 @@
                 position = scroll;
             });
             
-            function getRandomColor() {
+            function getColor() {
                 var color = '';
                 var sezione = 'section'+nsezione;
-                   // color = getComputedStyle(sezione).backgroundColor;
-                color = getComputedStyle(section1).backgroundColor;
-                windows.alert(color);
+                
+                
+                var element = document.getElementsByClassName('section fp-section active')[0]; 
+                
+                var style=window.getComputedStyle(element,"");
+                
+                var color=style.getPropertyValue("background-color");
+                //window.alert(color);
+                //color = getComputedStyle(element).backgroundColor;
+                
+                color = window.getComputedStyle(document.body, null).getPropertyValue('backgroundColor');
+                
+                //window.alert(color);
+                
                 return color;
             }
             
-            setInterval(function() {$('meta[name="theme-color"]').attr({content: getRandomColor()});},1000);
+            setInterval(function() {$('meta[name="theme-color"]').attr({content: getColor()});},2000);
 
         </script>
 <!--    

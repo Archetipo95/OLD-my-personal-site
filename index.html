@@ -121,7 +121,7 @@
             /* section1 */
             
             #section1 {
-                background-color: #40C4FF;
+                background-color: rgb(64, 196, 255);
             }
         
             #section1 h1 {
@@ -222,11 +222,26 @@
         <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 
         <script>
+            var position = $(window).scrollTop(); // should start at 0
+            
+            var nsezione = 0;
+            
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if(scroll > position) {
+                    nsezione++;
+                } else {
+                    nsezione--;
+                }
+                position = scroll;
+            });
+            
             function getRandomColor() {
                 var color = '';
-                
-                    color = getComputedStyle(13).backgroundColor;
-                
+                var sezione = 'section'+nsezione;
+                   // color = getComputedStyle(sezione).backgroundColor;
+                color = getComputedStyle(section1).backgroundColor;
+                windows.alert(color);
                 return color;
             }
             

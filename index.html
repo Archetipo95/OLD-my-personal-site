@@ -167,7 +167,7 @@
             /* section4 */
             
             #section4 {
-                background-color: whitesmoke;
+                background-color: #aa95ff;
             }
 
             #section4 h1 {
@@ -222,40 +222,16 @@
         <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 
         <script>
-            var position = $(window).scrollTop(); // should start at 0
-            
-            var nsezione = 0;
-            
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();
-                if(scroll > position) {
-                    nsezione++;
-                } else {
-                    nsezione--;
-                }
-                position = scroll;
-            });
-            
             function getColor() {
                 var color = '';
-                var sezione = 'section'+nsezione;
                 
-                
-                var element = document.getElementsByClassName('section fp-section active')[0]; 
-                
+                var element = document.getElementsByClassName('section fp-section active')[0];        
                 var style=window.getComputedStyle(element,"");
-                
                 var color=style.getPropertyValue("background-color");
-                //window.alert(color);
-                //color = getComputedStyle(element).backgroundColor;
-                
-                //window.alert(color);
-                
+
                 return color;
             }
-            
-            setInterval(function() {$('meta[name="theme-color"]').attr({content: getColor()});},2000);
-
+            setInterval(function() {$('meta[name="theme-color"]').attr({content: getColor()});},1000);
         </script>
 <!--    
         <script>

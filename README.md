@@ -1,5 +1,5 @@
 
-<img src="https://i.imgsafe.org/fbeab1af6c.png" width="48">
+<img src="https://i.imgsafe.org/fbeab1af6c.png" width="100">
 
 ![Figure 1-1](https://i.imgsafe.org/fbeadb7fa6.png "Figure 1-1")
 ![Figure 1-1](https://i.imgsafe.org/fbeb088dcf.png "Figure 1-1")

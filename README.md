@@ -1,8 +1,1 @@
-Scemo chi legge
-
-Hai letto :) :) :) sei scemo!
-
-TAB >> SPACE
-
-Scrivendo seriamente...
-Questo se stai leggendo questo testo sei scemo punto e ACCAPO.
+![Figure 1-1](https://drive.google.com/open?id=0B578E2G4Zh1RcnJXRHdrT0ZNZFE "Figure 1-1")

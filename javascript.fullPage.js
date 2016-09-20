@@ -126,7 +126,7 @@
 
             //Accessibility
             keyboardScrolling: true,
-            recordHistory: true,
+            recordHistory: false,
 
             //design
             controlArrows: true,

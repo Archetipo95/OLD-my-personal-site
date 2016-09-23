@@ -53,7 +53,7 @@
             }
         
             ol, ul {
-                list-style: none;
+                list-style-type: none;
                 margin: 0;
                 padding: 0;
             }
@@ -103,7 +103,14 @@
                 height: 100%;
                 width: 100%;
             }
-        
+            
+            .sx { 
+                float: left;
+                width: 50%;
+            } 
+            .dx {
+            }
+            
             /* section0 */
             
             #section0 {
@@ -141,6 +148,10 @@
         
             #section1 p {
                 opacity: 0.8;
+                color: #333;
+                text-align: justify;
+                padding-left: 15%;
+                padding-right: 15%;
             }
         
             /* section2 */
@@ -167,25 +178,18 @@
                 color: #F2F2F2;
             }
         
-            #section3 p {
+            #section3 p { 
                 opacity: 0.6;
-            }
-        
-            #section3 img {
-                width: 10%;
-            }
+                color: #333;
+            } 
             
             /* section4 */
             
             #section4 {
                 background-color: #001326;
+                padding-top: 10%;
             }
 
-            #section4 .content{
-                //top: 50%;
-                //transform: translateY(-50%);
-            }
-            
             #section4 h1 {
                 color: #FFF;
             }
@@ -284,38 +288,64 @@
         <div class="section" id="section0">
             <div class="content">
                 <div class="corner-ribbon top-left sticky white shadow">NEW SITE!</div>
-                <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAASaAAAAJGRmNWI0OTcyLWFjZTYtNGFkYS1iMWJiLTVjOThlODY3MzAwZA.jpg">
+                <img src="img/profilo.jpg">
                 <h1>Martin Masevski</h1>
                 <p>Always Improve, Never Be Satisfied</p>
             </div>
         </div>
         <div class="section" id="section1">
-            <div class="slide" id="slide1">
-                <div class="content">
-                    <h1>Slide 1</h1>
-                    <p>Questo e' un paragrafo</p>
-                </div>
-            </div>
-            <div class="slide" id="slide2">
-                <div class="content">
-                    <h1>Slide 2</h1>
-                </div>
-            </div>
-            <div class="slide" id="slide3">
-                <div class="content">
-                    <h1>Slide 3</h1>
-                </div>
+            <div class="content">
+                <h1>Who am I ?</h1>
+
+                    <p>Hello, I am a web developer and a programmer.
+                    Currently I am studying IT science at the University of Padua.
+                    In 2015 I graduated from high school ITIS Euganeo, Este (PD) Italy, in Information Technology and Telecommunications.
+                    I am always looking for challenges with which improve my skills and learn new things.
+                    I am a technology enthusiast not only for software but also for hardware, networking and many other things like IoT, PCs, laptops, tables, smarthphones...</p>
+
             </div>
         </div>
         <div class="section" id="section2">
             <div class="content">
-                <h1>Find me on</h1>
-                <p>IE 8+ support.</p>
+                <div class="slide" id="slide1">
+                <div class="content">
+                    <h1>Project 1</h1>
+                    <p><p>QUESTO E' UN ART-ATTACK :D</p></p>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="content">
+                    <h1>Project 2</h1>
+                    <p>QUESTO E' UN ART-ATTACK :D</p>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <div class="content">
+                    <h1>ProjectT 3</h1>
+                    <p>QUESTO E' ART-ATTACK !!!!</p>
+                </div>
+                </div>
             </div>
         </div>
         <div class="section" id="section3">
             <div class="content">
-                <img src="img/github.png">
+                <h1>My skills</h1>
+                <div class="sx">
+                    <ul>
+                        <li><p>CIAO</p></li>
+                        <li><p>CIAO</p></li>
+                        <li><p>CIAO</p></li>
+                        <li><p>CIAO</p></li>
+                    </ul>
+                </div>
+                <div class="dx">
+                    <ul>
+                        <li><p>CIAO</p></li>
+                        <li><p>CIAO</p></li>
+                        <li><p>CIAO</p></li>
+                        <li><p>CIAO</p></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="section" id="section4">

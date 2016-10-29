@@ -261,9 +261,12 @@
 
                 return color;
             }
-            setInterval(function(){$('meta[name="theme-color"]').attr({content: getColor()});}
-                        function(){$('meta[name="msapplication-navbutton-color"]').attr({content: getColor()});}
-                        function(){$('meta[name="apple-mobile-web-app-status-bar-style"]').attr({content: getColor()});},700);
+            setInterval(function(){$('meta[name="theme-color"]').attr({content: getColor()});},700);
+            setInterval(function(){$('meta[name="msapplication-navbutton-color"]').attr({content: getColor()});},700);
+            setInterval(function(){$('meta[name="apple-mobile-web-app-status-bar-style"]').attr({content: getColor()});},700);
+            
+            
+            
         </script>
     
     </head>

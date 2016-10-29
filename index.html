@@ -10,9 +10,9 @@
         <!-- Chrome, Firefox OS, Opera and Vivaldi -->
         <meta name="theme-color" content="#CDDC39">
         <!-- Windows Phone -->
-        <meta name="msapplication-navbutton-color" content="#000">
+        <meta name="msapplication-navbutton-color" content="#CDDC39">
         <!-- iOS Safari -->
-        <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#CDDC39">
        
         <!-- favicon-->
         <link href="img/favicon.png" rel="icon" type="image/png"/>
@@ -87,11 +87,11 @@
             }
         
             h1 {
-                font-size: 4em;
+                font-size: 50px;
             }
 
             p {
-                font-size: 1.7em;
+                font-size: 25px;
                 
             }
         
@@ -261,24 +261,10 @@
 
                 return color;
             }
-            setInterval(function() {$('meta[name="theme-color"]').attr({content: getColor()});},700);
+            setInterval(function(){$('meta[name="theme-color"]').attr({content: getColor()});}
+                        function(){$('meta[name="msapplication-navbutton-color"]').attr({content: getColor()});}
+                        function(){$('meta[name="apple-mobile-web-app-status-bar-style"]').attr({content: getColor()});},700);
         </script>
-<!--    
-        <script>
-            
-            function getRandomColor() {
-                var letters = '0123456789ABCDEF'.split('');
-                var color = '#';
-                for (var i = 0; i < 6; i++ ) {
-                    color += letters[Math.floor(Math.random() * 16)];
-                }
-                return color;
-            }
-            
-            setInterval(function() {$('meta[name="theme-color"]').attr({content: getRandomColor()});},10000);
-    
-        </script>
--->
     
     </head>
 
@@ -288,7 +274,7 @@
         <div class="section" id="section0">
             <div class="content">
                 <div class="corner-ribbon top-left sticky white shadow">ALPHA</div>
-                <img src="img/profilo.jpg">
+                <img src="img/profilo.png">
                 <h1>Martin Masevski</h1>
                 <p>Always Improve, Never Be Satisfied</p>
             </div>
@@ -297,11 +283,10 @@
             <div class="content">
                 <h1>Who am I ?</h1>
 
-                    <p>Hello, I am a web developer and a programmer.
-                    Currently I am studying IT science at the University of Padua.
-                    In 2015 I graduated from high school ITIS Euganeo, Este (PD) Italy, in Information Technology and Telecommunications.
-                    I am always looking for challenges with which improve my skills and learn new things.
-                    I am a technology enthusiast not only for software but also for hardware, networking and many other things like IoT, PCs, laptops, tables, smarthphones...</p>
+                    <p>Hello and welcome to my site. I'm Martin a web developer and programmer.
+                    Currently I'm studying computer science at the University of Padova.
+                    In 2015 I graduated from High School ITIS Euganeo Este (PD), in Information Technology and Telecommunications.
+                    I'm a technology enthusiast and I love playing with the latest gadgets.</p>
 
             </div>
         </div>

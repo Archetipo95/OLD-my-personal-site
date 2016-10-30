@@ -1,318 +1,395 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <meta name="mobile-web-app-capable" content="yes">
-        
-        <!-- Chrome, Firefox OS, Opera and Vivaldi -->
-        <meta name="theme-color" content="#CDDC39">
-        <!-- Windows Phone -->
-        <meta name="msapplication-navbutton-color" content="#CDDC39">
-        <!-- iOS Safari -->
-        <meta name="apple-mobile-web-app-status-bar-style" content="#CDDC39">
-       
-        <!-- favicon-->
-        <link href="img/favicon.png" rel="icon" type="image/png"/>
-        
-        <title>Martin's website</title>
-        
-        <link rel="stylesheet" type="text/css" href="javascript.fullPage.css">
-        <link rel="stylesheet" href="font/stylesheet.css" type="text/css" charset="utf-8" />
 
-        <style>
-             /* CSS reset */
-            
-            body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
-                padding: 0;
-                margin: 0;
-            }
-        
-            a {
-                text-decoration: none;
-            }
-        
-            table {
-                border-spacing: 0;
-            }
-        
-            fieldset, img {
-                border: 0;
-            }
-        
-            address, caption, cite, code, dfn, em, strong, th, var {
-                font-weight: normal;
-                font-style: normal;
-            }
-        
-            strong {
-                font-weight: bold;
-            }
-        
-            ol, ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
-        
-            caption, th {
-                text-align: left;
-            }
-        
-            h1, h2, h3, h4, h5, h6 {
-                font-weight: normal;
-                font-size: 100%;
-                margin: 0;
-                padding: 0;
-                color: #444;
-            }
-        
-            q:before, q:after {
-                content: '';
-            }
-        
-            abbr, acronym {
-                border: 0;
-            }
-            
-        
-            /* CSS personalizzato */
-            
-            body {
-                font-family: 'robotoblack';
-                background-color: black;
-                display: inline-block;
-            }
-        
-            h1 {
-                font-size: 50px;
-            }
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-            p {
-                font-size: 25px;
-                
-            }
-        
-            .content {
-                position: relative;
-                //top: 10%;
-                //transform: translateY(-50%);
-                text-align: center;
-                height: 100%;
-                width: 100%;
-            }
-            
-            .sx { 
-                float: left;
-                width: 50%;
-            } 
-            .dx {
-            }
-            
-            /* section0 */
-            
-            #section0 {
-                background-color: #CCDC39;
-            }
-            
-            #section0 .content{
-                top: 10%;
-            }
-        
-            #section0 h1 {
-                color: #444;
-            }
-        
-            #section0 p {
-                color: #333;
-                opacity: 0.4;
-            }
-            
-            #section0 img{
-                border-radius: 50%;
-                border: 3px solid #ACC753;
-                max-width: 20%;
-            }
-            
-            /* section1 */
-            
-            #section1 {
-                background-color: #3299FF;
-            }
-        
-            #section1 h1 {
-                color: #FFF;
-            }
-        
-            #section1 p {
-                opacity: 0.8;
-                color: #333;
-                text-align: justify;
-                padding-left: 10%;
-                padding-right: 10%;
-            }
-        
-            /* section2 */
-        
-            #section2 {
-                background-color: #FF7F00;
-            }
-        
-            #section2 h1 {
-                color: #F2F2F2;
-            }
-        
-            #section2 p {
-                opacity: 0.6;
-            }
-        
-            /* section3 */
-            
-            #section3 {
-                background-color: #CC1414;
-            }
-        
-            #section3 h1 {
-                color: #F2F2F2;
-            }
-        
-            #section3 p { 
-                opacity: 0.6;
-            } 
-            
-            /* section4 */
-            
-            #section4 {
-                background-color: #001326;
-                padding-top: 10%;
-            }
+    <meta name="mobile-web-app-capable" content="yes">
 
-            #section4 h1 {
-                color: #FFF;
-            }
-        
-            #section4 p {
-                opacity: 0.6;
-            }
-            
-            #copy {
-                color: #FFF;
-                position: absolute;
-                bottom: 5px;
-                right: 5px;
-                font-size: 0.8em;
-                padding-right: 1em;
-            }
-            
-            #section4 img {
-                width: 15%;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-        
-            .corner-ribbon {
-                width: 200px;
-                background: #E43;
-                position: absolute;
-                top: 25px;
-                left: -50px;
-                text-align: center;
-                line-height: 50px;
-                letter-spacing: 1px;
-                color: #F0F0F0;
-                transform: rotate(-45deg);
-                -webkit-transform: rotate(-45deg);
-            }
-        
-            /* CSS per fiocco */
-        
-            .corner-ribbon.sticky {
-                position: fixed;
-            }
-        
-            .corner-ribbon.shadow {
-                box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-            }
-        
-            .corner-ribbon.top-left {
-                top: 25px;
-                left: -50px;
-                transform: rotate(-45deg);
-                -webkit-transform: rotate(-45deg);
-            }
-        
-            .corner-ribbon.white {
-                background: #f0f0f0;
-                color: #555;
-            }
-        </style>
-    
-        <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Chrome, Firefox OS, Opera and Vivaldi -->
+    <meta name="theme-color" content="#CDDC39">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#CDDC39">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#CDDC39">
 
-        <script>
-            function getColor() {
-                var color = '';
-                
-                var element = document.getElementsByClassName('section fp-section active')[0];        
-                var style=window.getComputedStyle(element,"");
-                var color=style.getPropertyValue("background-color");
+    <!-- favicon-->
+    <link href="img/favicon.png" rel="icon" type="image/png" />
 
-                return color;
-            }
-            setInterval(function(){$('meta[name="theme-color"]').attr({content: getColor()});},700);
-            setInterval(function(){$('meta[name="msapplication-navbutton-color"]').attr({content: getColor()});},700);
-            setInterval(function(){$('meta[name="apple-mobile-web-app-status-bar-style"]').attr({content: getColor()});},700);
-            
-            
-            
-        </script>
-    
-    </head>
+    <title>Martin's website</title>
 
-    <body>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="javascript.fullPage.css">
+    <link rel="stylesheet" href="font/stylesheet.css" type="text/css" charset="utf-8" />
+
+
+
+    <style>
+        /* CSS reset */
+        
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        form,
+        fieldset,
+        input,
+        textarea,
+        p,
+        blockquote,
+        th,
+        td {
+            padding: 0;
+            margin: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        table {
+            border-spacing: 0;
+        }
+        
+        fieldset,
+        img {
+            border: 0;
+        }
+        
+        address,
+        caption,
+        cite,
+        code,
+        dfn,
+        em,
+        strong,
+        th,
+        var {
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+        
+        ol,
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        caption,
+        th {
+            text-align: left;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: normal;
+            font-size: 100%;
+            margin: 0;
+            padding: 0;
+            color: #444;
+        }
+        
+        q:before,
+        q:after {
+            content: '';
+        }
+        
+        abbr,
+        acronym {
+            border: 0;
+        }
+        /* CSS personalizzato */
+        
+        body {
+            font-family: 'robotoblack';
+            background-color: black;
+            display: inline-block;
+        }
+        
+        h1 {
+            font-size: 50px;
+        }
+        
+        p {
+            font-size: 25px;
+        }
+        
+        .content {
+            position: relative;
+            //top: 10%;
+            //transform: translateY(-50%);
+            text-align: center;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .sx {
+            float: left;
+            width: 50%;
+        }
+        
+        .dx {}
+        /* section0 */
+        
+        #section0 {
+            background-color: #CCDC39;
+        }
+        
+        #section0 .content {
+            top: 10%;
+        }
+        
+        #section0 h1 {
+            color: #444;
+        }
+        
+        #section0 p {
+            color: #333;
+            opacity: 0.4;
+        }
+        
+        
+        /* section1 */
+        
+        #section1 {
+            background-color: #3299FF;
+        }
+        
+        #section1 h1 {
+            color: #FFF;
+        }
+        
+        #section1 p {
+            opacity: 0.8;
+            color: #333;
+            text-align: justify;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        /* section2 */
+        
+        #section2 {
+            background-color: #FF7F00;
+        }
+        
+        #section2 h1 {
+            color: #F2F2F2;
+        }
+        
+        #section2 p {
+            opacity: 0.6;
+        }
+        /* section3 */
+        
+        #section3 {
+            background-color: #CC1414;
+        }
+        
+        #section3 h1 {
+            color: #F2F2F2;
+        }
+        
+        #section3 p {
+            opacity: 0.6;
+        }
+        /* section4 */
+        
+        #section4 {
+            background-color: #001326;
+            padding-top: 10%;
+        }
+        
+        #section4 h1 {
+            color: #FFF;
+        }
+        
+        #section4 p {
+            opacity: 0.6;
+        }
+        
+        #copy {
+            color: #FFF;
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            font-size: 0.8em;
+            padding-right: 1em;
+        }
+        
+        #section4 img {
+            width: 15%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .corner-ribbon {
+            width: 200px;
+            background: #E43;
+            position: absolute;
+            top: 25px;
+            left: -50px;
+            text-align: center;
+            line-height: 50px;
+            letter-spacing: 1px;
+            color: #F0F0F0;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        /* CSS per fiocco */
+        
+        .corner-ribbon.sticky {
+            position: fixed;
+        }
+        
+        .corner-ribbon.shadow {
+            box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+        }
+        
+        .corner-ribbon.top-left {
+            top: 25px;
+            left: -50px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        
+        .corner-ribbon.white {
+            background: #f0f0f0;
+            color: #555;
+        }
+        
+        .container {
+            padding-top: 10%;
+        }
+        .display-table{
+    display: table;
+    table-layout: fixed;
+}
+
+.display-cell{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+        .img {
+            padding: 5%;
+        }   
+        
+    </style>
+
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script>
+        function getColor() {
+            var color = '';
+
+            var element = document.getElementsByClassName('section fp-section active')[0];
+            var style = window.getComputedStyle(element, "");
+            var color = style.getPropertyValue("background-color");
+
+            return color;
+        }
+        setInterval(function () {
+            $('meta[name="theme-color"]').attr({
+                content: getColor()
+            });
+        }, 700);
+        setInterval(function () {
+            $('meta[name="msapplication-navbutton-color"]').attr({
+                content: getColor()
+            });
+        }, 700);
+        setInterval(function () {
+            $('meta[name="apple-mobile-web-app-status-bar-style"]').attr({
+                content: getColor()
+            });
+        }, 700);
+    </script>
+
+</head>
+
+<body>
 
     <div id="fullpage">
         <div class="section" id="section0">
-            <div class="content">
-                <div class="corner-ribbon top-left sticky white shadow">ALPHA</div>
-                <img src="img/profilo.png">
-                <h1>Martin Masevski</h1>
-                <p>Always Improve, Never Be Satisfied</p>
+            <div class="corner-ribbon top-left sticky white shadow">ALPHA</div>
+
+            <div class="container">
+                <div class="row display-table">
+                    <!--<div class="content"> -->
+                    <div class="col-lg-4 col-xs-8 offset-xs-2  display-cell">
+                        <img class="img-circle img-responsive" src="img/profilo.png">
+                    </div>
+                    
+                    <div class="col-lg-6 hidden-md-down display-cell">
+                    
+                    <h1>Martin Masevski</h1>
+                    <p>Always Improve, Never Be Satisfied</p>
+                       
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div class="row">
+                 <div class="col-sm-10 offset-sm-1 hidden-lg-up text-center">
+                    <h1>Martin Masevski</h1>
+                    <p>Always Improve, Never Be Satisfied</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section" id="section1">
             <div class="content">
                 <h1>Who am I ?</h1>
 
-                    <p>Hello and welcome to my site. I'm Martin a web developer and programmer.
-                    Currently I'm studying computer science at the University of Padova.
-                    In 2015 I graduated from High School ITIS Euganeo Este (PD), in Information Technology and Telecommunications.
-                    I'm a technology enthusiast and I love playing with the latest gadgets.</p>
+                <p>Hello and welcome to my site. I'm Martin a web developer and programmer. Currently I'm studying computer science at the University of Padova. In 2015 I graduated from High School ITIS Euganeo Este (PD), in Information Technology and Telecommunications. I'm a technology enthusiast and I love playing with the latest gadgets.</p>
 
             </div>
         </div>
         <div class="section" id="section2">
             <div class="content">
                 <div class="slide" id="slide1">
-                <div class="content">
-                    <h1>Project 1</h1>
-                    <p><p>QUESTO E' UN ART-ATTACK :D</p></p>
+                    <div class="content">
+                        <h1>Project 1</h1>
+                        <p>
+                            <p>QUESTO E' UN ART-ATTACK :D</p>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="slide" id="slide2">
-                <div class="content">
-                    <h1>Project 2</h1>
-                    <p>QUESTO E' UN ART-ATTACK :D</p>
+                <div class="slide" id="slide2">
+                    <div class="content">
+                        <h1>Project 2</h1>
+                        <p>QUESTO E' UN ART-ATTACK :D</p>
+                    </div>
                 </div>
-            </div>
-            <div class="slide" id="slide3">
-                <div class="content">
-                    <h1>ProjectT 3</h1>
-                    <p>QUESTO E' ART-ATTACK !!!!</p>
-                    <img src="img/giovanni.jpg" width="30%">
-                </div>
+                <div class="slide" id="slide3">
+                    <div class="content">
+                        <h1>ProjectT 3</h1>
+                        <p>QUESTO E' ART-ATTACK !!!!</p>
+                        <img src="img/giovanni.jpg" width="30%">
+                    </div>
                 </div>
             </div>
         </div>
@@ -321,31 +398,71 @@
                 <h1>My skills</h1>
                 <div class="sx">
                     <ul>
-                        <li><p>JAVA</p></li>
-                        <li><p>C++</p></li>
-                        <li><p>HTML</p></li>
-                        <li><p>CSS</p></li>
-                        <li><p>JS</p></li>
-                        <li><p>PASCAL</p></li>
-                        <li><p>MySQL</p></li>
-                        <li><p>PHP</p></li>
-                        <li><p>PYTHON</p></li>
-                        <li><p>ASSEMBLY 8086</p></li>
+                        <li>
+                            <p>JAVA</p>
+                        </li>
+                        <li>
+                            <p>C++</p>
+                        </li>
+                        <li>
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <p>CSS</p>
+                        </li>
+                        <li>
+                            <p>JS</p>
+                        </li>
+                        <li>
+                            <p>PASCAL</p>
+                        </li>
+                        <li>
+                            <p>MySQL</p>
+                        </li>
+                        <li>
+                            <p>PHP</p>
+                        </li>
+                        <li>
+                            <p>PYTHON</p>
+                        </li>
+                        <li>
+                            <p>ASSEMBLY 8086</p>
+                        </li>
                     </ul>
                 </div>
                 <div class="dx">
                     <ul>
-                        <li><p>GITHUB</p></li>
-                        <li><p>Bootstrap &amp; Materialize (CSS)</p></li>
-                        <li><p>PHPMYADMIN</p></li>
-                        <li><p>BRACKETS</p></li>
-                        <li><p>MS VISUAL STUDIO</p></li>
-                        <li><p>PAINT.NET / GIMP</p></li>
-                        <li><p>ECLIPSE</p></li>
-                        <li><p>LINUX</p></li>
-                        <li><p>ATOM / NOTEPAD++</p></li>
-                        <li><p>ANDROID</p></li>
-                        
+                        <li>
+                            <p>GITHUB</p>
+                        </li>
+                        <li>
+                            <p>Bootstrap &amp; Materialize (CSS)</p>
+                        </li>
+                        <li>
+                            <p>PHPMYADMIN</p>
+                        </li>
+                        <li>
+                            <p>BRACKETS</p>
+                        </li>
+                        <li>
+                            <p>MS VISUAL STUDIO</p>
+                        </li>
+                        <li>
+                            <p>PAINT.NET / GIMP</p>
+                        </li>
+                        <li>
+                            <p>ECLIPSE</p>
+                        </li>
+                        <li>
+                            <p>LINUX</p>
+                        </li>
+                        <li>
+                            <p>ATOM / NOTEPAD++</p>
+                        </li>
+                        <li>
+                            <p>ANDROID</p>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -358,12 +475,12 @@
                 <a href="https://twitter.com/MartinMasevski" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
 
                 <a href="https://www.instagram.com/martinmasevski/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-                
+
                 <p id="copy">Copyright &#169 2016 Masevski Martin</p>
             </div>
         </div>
-        </div> 
-    
+    </div>
+
     <script type="text/javascript" src="javascript.fullPage.js"></script>
     <script type="text/javascript">
         fullpage.initialize('#fullpage', {

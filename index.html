@@ -298,6 +298,29 @@
             padding: 5%;
         }   
         
+        html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}
+        
+        
     </style>
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -335,36 +358,35 @@
 
     <div id="fullpage">
         <div class="section" id="section0">
+            <!-- ribbon -->
             <div class="corner-ribbon top-left sticky white shadow">ALPHA</div>
 
             <div class="container">
                 <div class="row display-table">
-                    <!--<div class="content"> -->
-                    <div class="col-md-4 col-xs-8 offset-xs-2  display-cell">
+                    <div class="col-md-4 offset-lg-4 col-xs-8 offset-xs-2  display-cell">
                         <img class="img-circle img-responsive" src="img/profilo.png">
                     </div>
-                    
-                    <div class="col-md-6 hidden-sm-down display-cell">
-                    
-                    <h1>Martin Masevski</h1>
-                    <p>Always Improve, Never Be Satisfied</p>
-                       
+
+                    <div class="col-md-8 col-lg-6 hidden-sm-down display-cell">
+
+                        <h1>Martin Masevski</h1>
+                        <p>Always Improve, Never Be Satisfied</p>
+
                     </div>
-                    <!-- </div> -->
                 </div>
                 <div class="row">
-                 <div class="col-sm-10 offset-sm-1 hidden-md-up text-center">
-                    <h1>Martin Masevski</h1>
-                    <p>Always Improve, Never Be Satisfied</p>
+                    <div class="col-sm-10 offset-sm-1 hidden-md-up text-center">
+                        <h1>Martin Masevski</h1>
+                        <p>Always Improve, Never Be Satisfied</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="section" id="section1">
-            <div class="content">
-                <h1>Who am I ?</h1>
+            <div class="container">
+                <h1 class="text-center">Hello and welcome to my site</h1>
 
-                <p>Hello and welcome to my site. I'm Martin a web developer and programmer. Currently I'm studying computer science at the University of Padova. In 2015 I graduated from High School ITIS Euganeo Este (PD), in Information Technology and Telecommunications. I'm a technology enthusiast and I love playing with the latest gadgets.</p>
+                <p>I'm Martin a web developer and programmer. Currently I'm studying computer science at the University of Padova. In 2015 I graduated from High School ITIS Euganeo Este (PD), in Information Technology and Telecommunications. I'm a technology enthusiast and I love playing with the latest gadgets.</p>
 
             </div>
         </div>

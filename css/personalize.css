@@ -315,10 +315,12 @@ p{
 }
 
 .nome {
- font-size: calc(3px + .5vw);
+ font-size: calc(3.5px + .5vw);
  vertical-align: middle;
  float: none;
  text-align: center;
+ margin-left: 2em;
+ margin-top: 1em;
 }
 
 .vcenter {

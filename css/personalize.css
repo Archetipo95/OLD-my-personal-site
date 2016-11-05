@@ -316,7 +316,7 @@ p{
   }
 
   .nome {
-   font-size: calc(6px + .5vw);
+   font-size: calc(8px + .5vw);
    margin-top: 4em;
   }
 }

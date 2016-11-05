@@ -311,14 +311,7 @@ p{
     float: none;
 }
 
-.turnDeviceNotification {
-  position:fixed;
-  top: 0;
-  left:0;
-  height:100%;
-  width:100%;
-  background-image:url('img/turnDevice.png');
-  background-size:cover;
+.mobile-image {display: none;}
+media screen and (min-width:540px) {
+    .mobile-image {display: block;}
 }
-
-@media all and (orientation:landscape) { .turnDeviceNotification { display:block;	} } @media all and (orientation:portrait) { .turnDeviceNotification { display:none;	} }

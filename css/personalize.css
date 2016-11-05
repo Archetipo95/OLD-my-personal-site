@@ -302,8 +302,21 @@ p{
 
  /* Profilo
   * --------------------------------------- */
+.chiude {
+  display: inline-block;
+}
+
 .profilo {
-  width: 100%;
+  width: 50vmin;
+  min-width: 200px;
+  vertical-align: middle;
+}
+
+.nome {
+margin-left: 20px;
+ font-size: calc(3px + .5vw);
+ vertical-align: middle;
+ float: none;
 }
 
 .vcenter {

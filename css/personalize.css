@@ -317,7 +317,6 @@ p{
   left:0;
   height:100%;
   width:100%;
-  display: none;
   background-image:url('img/turnDevice.png');
   background-size:cover;
 }

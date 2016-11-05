@@ -321,11 +321,11 @@ p{
   }
 
   .titolo {
-    font-size: calc(10px + 10vw);
+    font-size: calc(12px + 10vw);
   }
 
   .testo {
-    font-size: calc(6px + 4vw);
+    font-size: calc(12px + 5vw);
   }
 }
 @media screen and (orientation:landscape) {

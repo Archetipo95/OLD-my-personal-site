@@ -308,9 +308,10 @@ p{
 
 .profilo {
   width: 50vmin;
-  min-width: 200px;
+  min-width: 150px;
   vertical-align: middle;
   text-align: center;
+  float: none;
 }
 
 .nome {

@@ -86,7 +86,7 @@ body{
 	font-family: bold 24px/45px Roboto;
 	color: #333;
 	color: rgba(0,0,0,0.5);
-  background-color: 000;
+  background-color: #000000;
 }
 .wrap{
 	margin-left: auto;

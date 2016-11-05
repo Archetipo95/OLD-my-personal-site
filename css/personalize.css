@@ -319,6 +319,14 @@ p{
    font-size: calc(8px + .5vw);
    margin-top: 4em;
   }
+
+  .titolo {
+    font-size: calc(10px + 10vw);
+  }
+
+  .testo {
+    font-size: calc(6px + 4vw);
+  }
 }
 @media screen and (orientation:landscape) {
 
@@ -341,12 +349,12 @@ p{
    margin-left: 2em;
    margin-top: 1em;
   }
-}
 
-.titolo {
-  font-size: calc(10px + 8vw);
-}
+  .titolo {
+    font-size: calc(10px + 8vw);
+  }
 
-.testo {
-  font-size: calc(6px + 2vw);
+  .testo {
+    font-size: calc(6px + 2vw);
+  }
 }

@@ -343,8 +343,10 @@ p{
   }
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+.titolo {
+  font-size: calc(10px + 8vw);
+}
+
+.testo {
+  font-size: calc(6px + 2vw);
 }

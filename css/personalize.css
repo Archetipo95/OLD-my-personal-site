@@ -318,7 +318,7 @@ p{
   height:100%;
   width:100%;
   display: none;
-  background-image:url('../img/turnDevice.png');
+  background-image:url('img/turnDevice.png');
   background-size:cover;
 }
 

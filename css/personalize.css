@@ -302,29 +302,29 @@ p{
 
  /* Profilo
   * --------------------------------------- */
-.chiude {
-  display: inline-block;
-}
 
 @media screen and (orientation:portrait) {
+.chiude{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
   .profilo {
     width: 50vmin;
     min-width: 150px;
-    vertical-align: middle;
-    text-align: center;
-    float: none;
   }
 
   .nome {
    font-size: calc(6px + .5vw);
-   vertical-align: middle;
-   float: none;
-   text-align: center;
-   margin-left: 2em;
-   margin-top: 1em;
+   margin-top: 4em;
   }
 }
 @media screen and (orientation:landscape) {
+
+  .chiude {
+    display: inline-block;
+  }
   .profilo {
     width: 50vmin;
     min-width: 150px;

@@ -86,6 +86,7 @@ body{
 	font-family: bold 24px/45px Roboto;
 	color: #333;
 	color: rgba(0,0,0,0.5);
+  background-color: 000;
 }
 .wrap{
 	margin-left: auto;
@@ -309,9 +310,4 @@ p{
     display: inline-block;
     vertical-align: middle;
     float: none;
-}
-
-.mobile-image {display: none;}
-media screen and (min-width:540px) {
-    .mobile-image {display: block;}
 }

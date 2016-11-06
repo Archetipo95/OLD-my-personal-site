@@ -30,7 +30,10 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				sectionsColor: ['#a8da2f', '#0f8cff', '#21282b'],
-				css3: true
+				css3: true, responsiveWidth: 600,
+				afterResponsive: function(isResponsive){
+
+				}
 			});
 		});
 	</script>

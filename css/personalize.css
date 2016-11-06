@@ -300,6 +300,32 @@ p{
      color: #555;
  }
 
+ /* SCROLL BAR*/
+
+ ::-webkit-scrollbar {
+   width: 5px;
+   height: 5px;
+ }
+
+ ::-webkit-scrollbar-track {
+   background-color: rgba(0, 0, 0, 1);
+   width: 5px;
+ }
+
+ ::-webkit-scrollbar-thumb {
+   background-color: red;
+   border-radius: 5px;
+ }
+
+ ::-webkit-scrollbar-button {
+   height: 0px;
+   width: 0px;
+ }
+
+ ::-webkit-scrollbar-corner {
+   background-color: rgba(0, 0, 0, 1);
+ }
+
  /* Profilo
   * --------------------------------------- */
 
